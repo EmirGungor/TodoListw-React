@@ -1,8 +1,26 @@
-# React + Vite
+# Todo List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple **React.js** application that allows users to manage their tasks (todos) efficiently. It includes basic features such as adding, editing, and deleting tasks.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new tasks.
+- Edit existing tasks.
+- Delete tasks.
+- Dynamic interaction with tasks.
+
+## Technologies Used
+
+- **React.js**: To build the user interface.
+- **CSS**: For styling the application.
+- **React Icons**: For adding icons for edit and delete actions.
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/todo-list-app.git
+   cd TodoReact
+   npm install
+   npm run dev
+   Open your browser and go to:[localhttp://localhost:5173/](http://localhost:5173/)
