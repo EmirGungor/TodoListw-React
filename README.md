@@ -32,8 +32,7 @@ Follow these steps to run the application on your local machine.
    npm start
 
 
-
-   ## How to Use
+## How to Use
 1. **Add a Task:**
    - Type your task in the input field at the top and click the **"Add Task"** button.
 2. **Edit a Task:**
@@ -48,25 +47,9 @@ Follow these steps to run the application on your local machine.
 
 
 
-
-#Project Structure
-TodoListw-React/
-│
-├── public/                 # Static files
-├── src/
-│   ├── components/         # React components
-│   │   └── TodoList.jsx    # Main Todo List component
-│   ├── css/                # Styles
-│   │   └── App.css         # Main CSS file
-│   └── App.js              # Entry point of the app
-├── package.json            # Dependency list and project metadata
-└── README.md               # Project documentation
-
-
-
-##Technologies Used
-React.js: A JavaScript library for building user interfaces.
-CSS: For styling the application.
-React Icons: Used for the icons (e.g., edit and delete icons).
-Node.js: For managing dependencies.
+## Technologies Used
+1. **React.js: A JavaScript library for building user interfaces.**
+2. **CSS: For styling the application.**
+3. **React Icons: Used for the icons (e.g., edit and delete icons).**
+4. **Node.js: For managing dependencies.**
     
