@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(71, 68, 65);
+  height: 100vh;
+  padding: 30px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(139, 131, 148);
+  border-radius: 10px;
+  width: 70%;
+  height: auto;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+.background {
+  width: 100%;
+  background-color: rgb(216, 192, 147);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.todoss {
+  border: 1px solid rgb(23, 44, 136);
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+.title {
+  margin-bottom: 30px;
+}
+
+.create {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.create-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 30px;
+  background-color: bisque;
+  font-weight: 700;
+}
+
+.create-btn:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.create-input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+  border-radius: 10px;
+}
+
+.icons {
+  cursor: pointer;
+  margin-right: 7px;
+  font-size: 2rem;
+}
+
+.empty-message {
+  font-size: 1.5rem;
+}
+
+.brand {
+  margin-top: auto;
+}
+
+.todoss.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.checkbox {
+  width: 30px;
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.filter-input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+}
+
