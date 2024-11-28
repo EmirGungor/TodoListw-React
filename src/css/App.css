@@ -22,37 +22,40 @@
   padding: 20px;
 }
 
-.content {
-  display: flex;
-  width: 70%;
-  flex-direction: column;
+.content{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
 }
 
-.background {
-  width: 100%;
-  background-color: rgb(216, 192, 147);
-  padding: 20px;
-  border-radius: 20px;
-  margin-top: 15px;
+.background{
+    width: 100%;
+    background-color: rgb(216, 192, 147);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
 }
 
-.todoss {
-  border: 1px solid rgb(23, 44, 136);
-  display: flex;
-  justify-content: space-between;
-  font-size: 2rem;
-  margin-top: 1.5rem;
-  padding: 10px;
-  border-radius: 10px;
+
+.todoss{
+    border: 1px solid rgb(23, 44, 136);
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
 }
 .title {
   margin-bottom: 30px;
 }
 
+
+
 .create {
-  display: flex;
-  justify-content: center;
-  height: auto;
+    display: flex;
+    justify-content: center;
+    height: auto;
 }
 
 .create-btn {
@@ -65,9 +68,9 @@
   font-weight: 700;
 }
 
-.create-btn:hover {
-  background-color: yellowgreen;
-  color: white;
+.create-btn:hover{
+    background-color: yellowgreen;
+    color: white;
 }
 
 .create-input {
@@ -78,18 +81,18 @@
   border-radius: 10px;
 }
 
-.icons {
-  cursor: pointer;
-  margin-right: 7px;
-  font-size: 2rem;
+.icons{
+    cursor: pointer;
+    margin-right: 7px;
+    font-size: 2rem;
 }
 
-.empty-message {
-  font-size: 1.5rem;
+.empty-message{
+    font-size: 1.5rem;
 }
 
-.brand {
-  margin-top: auto;
+.brand{
+   margin-top: auto;
 }
 
 .todoss.completed {
