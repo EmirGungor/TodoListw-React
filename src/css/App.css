@@ -1,61 +1,93 @@
+/* Genel sıfırlama */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Tüm ekranı kaplayan yapı */
 .body {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: rgb(71, 68, 65);
-  height: 100vh;
+  min-height: 100vh; /* Ekranın tamamını kapsaması için */
   padding: 30px;
 }
 
+/* Ana uygulama kapsayıcısı */
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(139, 131, 148);
   border-radius: 10px;
-  width: 70%;
-  height: auto;
+  width: 100%; /* Genişliği artırdık */
+  height: 100vh;
   padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif bir gölge */
 }
 
-.content{
-    display: flex;
-    width: 70%;
-    flex-direction: column;
-}
-
-.background{
-    width: 100%;
-    background-color: rgb(216, 192, 147);
-    padding: 20px;
-    border-radius: 20px;
-    margin-top: 15px;
-}
-
-
-.todoss{
-    border: 1px solid rgb(23, 44, 136);
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-    margin-top: 1.5rem;
-    padding: 10px;
-    border-radius: 10px;
-}
+/* Başlık */
 .title {
   margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
 }
 
+/* İçerik düzeni */
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
 
+/* Arka plan */
+.background {
+  width: 100%;
+  background-color: rgb(216, 192, 147);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
 
+/* Görev kutuları */
+.todoss {
+  border: 1px solid rgb(23, 44, 136);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.todoss:hover {
+  transform: scale(1.02); /* Hover durumunda hafif büyütme efekti */
+}
+
+/* Tamamlanmış görev */
+.todoss.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Checkbox stili */
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Yeni görev ekleme */
 .create {
-    display: flex;
-    justify-content: center;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .create-btn {
@@ -63,48 +95,32 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  margin-right: 30px;
+  margin-right: 15px;
   background-color: bisque;
   font-weight: 700;
+  transition: background-color 0.3s ease;
 }
 
-.create-btn:hover{
-    background-color: yellowgreen;
-    color: white;
+.create-btn:hover {
+  background-color: yellowgreen;
+  color: white;
 }
 
-.create-input {
+.create-input,
+.priority-input {
   padding: 10px;
-  border: none;
-  border-bottom: 1px solid lightgray;
-  outline: none;
+  border: 1px solid lightgray;
   border-radius: 10px;
+  outline: none;
+  margin-right: 10px;
 }
 
-.icons{
-    cursor: pointer;
-    margin-right: 7px;
-    font-size: 2rem;
+.priority-input {
+  width: 80px;
+  text-align: center;
 }
 
-.empty-message{
-    font-size: 1.5rem;
-}
-
-.brand{
-   margin-top: auto;
-}
-
-.todoss.completed {
-  text-decoration: line-through;
-  color: gray;
-}
-
-.checkbox {
-  width: 30px;
-  cursor: pointer;
-}
-
+/* Filtreleme */
 .filter {
   display: flex;
   justify-content: center;
@@ -119,3 +135,40 @@
   outline: none;
 }
 
+/* Boş liste mesajı */
+.empty-message {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Marka bölümü */
+.brand {
+  margin-top: auto;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.priority-select {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.icons {
+  cursor: pointer;
+  margin-right: 7px;
+  font-size: 2rem;
+}
+
+.icons .disabled {
+  color: gray;
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
