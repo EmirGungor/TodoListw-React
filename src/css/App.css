@@ -172,3 +172,45 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+@media (max-width: 768px) {
+  .App {
+    width: 95%; /* Genişliği ekranın %95'i yap */
+    padding: 20px; /* Daha az iç boşluk */
+    border-radius: 5px; /* Daha küçük kenar yuvarlama */
+    font-size: 0.9rem; /* Genel yazı boyutunu küçült */
+  }
+
+  .title {
+    font-size: 2rem; /* Başlık boyutunu küçült */
+    margin-bottom: 20px; /* Daha az alt boşluk */
+  }
+
+  .create,
+  .filter {
+    flex-direction: column; /* Satır yerine sütun düzenine geç */
+    align-items: stretch; /* Elemanları genişlet */
+    gap: 10px; /* Elemanlar arasında boşluk bırak */
+  }
+
+  .create-btn {
+    width: 100%; /* Butonu genişlet */
+  }
+  .priority-select {
+    width: 35%;
+  }
+
+  .create-input,
+  .filter-input {
+    width: 100%; /* Input alanlarını tam genişlik yap */
+  }
+
+  .todoss {
+    font-size: 1.2rem; /* Görevlerin yazı boyutunu küçült */
+    padding: 8px; /* Daha az iç boşluk */
+  }
+
+  .icons {
+    font-size: 1.5rem; /* İkon boyutunu küçült */
+  }
+}
