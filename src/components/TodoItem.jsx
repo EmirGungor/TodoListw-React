@@ -31,7 +31,8 @@ const TodoItem = ({ todo, index, toggleComplete, removeTodo, editTodo }) => {
       />
       <span>{todo.text}</span>
       <div className="icons">
-        <IoIosRemoveCircleOutline onClick={() => removeTodo(todo.text)} />
+        <IoIosRemoveCircleOutline onClick={() => removeTodo(index)} />
+
         <CiEdit
           onClick={() => {
             if (!todo.completed) editTodo(index); // Sadece tamamlanmamış görevlerde çalışır

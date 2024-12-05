@@ -20,9 +20,9 @@ const TodoList = () => {
   const addTodo = (newTodo, priority) => {
     setTodos([...todos, { text: newTodo, completed: false, priority }]);
   };
-  
-  const removeTodo = (todoText) => {
-    setTodos(todos.filter((todo) => todo.text !== todoText));
+
+  const removeTodo = (index) => {
+    setTodos(todos.filter((_, i) => i !== index)); // Sadece verilen index dışındaki öğeleri tut
   };
 
   const editTodo = (index) => {
